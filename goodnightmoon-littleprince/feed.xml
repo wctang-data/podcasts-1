@@ -7,11 +7,19 @@
     <language>zh-tw</language>
     <link>https://wctang-data.github.io/podcasts-1/goodnightmoon-littleprince/feed.xml</link>
     <item>
-      <author></author>
-      <title>晚安．月亮 - 小王子 00</title>
+      <title>00 晚安．月亮 - 小王子</title>
       <pubDate>2024-03-22 04:00:00 GMT</pubDate>
       <enclosure url="https://wctang-data.github.io/podcasts-1/goodnightmoon-littleprince/goodnightmoon-littleprince_00.mp3" type="audio/mpeg" length="644820" />
-      <description></description>
+    </item>
+    <item>
+      <title>01 遇見小王子</title>
+      <pubDate>2024-03-22 04:01:00 GMT</pubDate>
+      <enclosure url="https://wctang-data.github.io/podcasts-1/goodnightmoon-littleprince/goodnightmoon-littleprince_01.mp3" type="audio/mpeg" />
+    </item>
+    <item>
+      <title>02 小王子的星球</title>
+      <pubDate>2024-03-22 04:02:00 GMT</pubDate>
+      <enclosure url="https://wctang-data.github.io/podcasts-1/goodnightmoon-littleprince/goodnightmoon-littleprince_02.mp3" type="audio/mpeg" />
     </item>
   </channel>
 </rss>
