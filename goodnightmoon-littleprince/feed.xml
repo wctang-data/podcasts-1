@@ -5,12 +5,12 @@
     <author>wctang-data</author>
     <description>晚安．月亮 - 小王子</description>
     <language>zh-tw</language>
-    <link>https://wctang-data.github.io/podcast-1/晚安．月亮 - 小王子/feed.xml</link>
+    <link>https://wctang-data.github.io/podcast-1/goodnightmoon-littleprince/feed.xml</link>
     <item>
-      <author>Rody Davis, Norbert Kozsir</author>
-      <title>Flutter Desktop/Web and VR</title>
+      <author></author>
+      <title>晚安．月亮 - 小王子 00</title>
       <pubDate>2024-03-22 04:00:00 GMT</pubDate>
-      <enclosure url="https://wctang-data.github.io/podcast-1/晚安．月亮 - 小王子/20220402_小王子（0）.mp3" type="audio/mpeg" length="644820" />
+      <enclosure url="https://wctang-data.github.io/podcast-1/goodnightmoon-littleprince/goodnightmoon-littleprince_00.mp3" type="audio/mpeg" length="644820" />
       <description></description>
     </item>
   </channel>
