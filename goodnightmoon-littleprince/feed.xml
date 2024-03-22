@@ -1,28 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
-  <channel>
-    <title>小王子</title>
-    <description>晚安．月亮─床邊故事：小王子</description>
-    <link>https://wctang-data.github.io/podcasts-1/goodnightmoon-littleprince/</link>
-    <language>zh-TW</language>
-    <author>wctang-data</author>
-    <image>
-      <url>https://wctang-data.github.io/podcasts-1/goodnightmoon-littleprince/logo.jpg</url>
-    </image>
-    <item>
-      <title>00. 小王子</title>
-      <pubDate>2024-03-22 04:00:00 GMT</pubDate>
-      <enclosure url="https://wctang-data.github.io/podcasts-1/goodnightmoon-littleprince/00.mp3" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>01. 遇見小王子</title>
-      <pubDate>2024-03-22 04:01:00 GMT</pubDate>
-      <enclosure url="https://wctang-data.github.io/podcasts-1/goodnightmoon-littleprince/01.mp3" type="audio/mpeg" />
-    </item>
-    <item>
-      <title>02. 小王子的星球</title>
-      <pubDate>2024-03-22 04:02:00 GMT</pubDate>
-      <enclosure url="https://wctang-data.github.io/podcasts-1/goodnightmoon-littleprince/02.mp3" type="audio/mpeg" />
-    </item>
-  </channel>
-</rss>
+---
+layout: feed
+podcast-id: goodnightmoon-littleprince
+---

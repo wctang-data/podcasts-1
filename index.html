@@ -1,12 +1,19 @@
+---
+---
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8"/>
-    <title>wctang-data</title>
+    <title>{{ site.title }}</title>
   </head>
   <body>
-    <h1>wctang-data</h1>
-    <a href="goodnightmoon-littleprince/">晚安．月亮 - 小王子</a>
-    <a href="goodnightmoon-pinocchio/">晚安．月亮 - 木偶奇遇記</a>
+    <h1>{{ site.title }}</h1>
+    <ul>
+{% for podcast in site.data.podcasts %}
+      <li>
+        <a href="{{ podcast.id }}/">{{ podcast.title }}</a>
+      </li>
+{% endfor %}
+    </ul>
   </body>
 </html>

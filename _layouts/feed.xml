@@ -1,0 +1,21 @@
+{% for podcast in site.data.podcasts %}{% if podcast.id == page.podcast-id %}<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>{{ podcast.title }}</title>
+    <description>{{ podcast.description }}</description>
+    <link>{{ "/" | prepend: podcast.id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}</link>
+    <language>{{ site.lang }}</language>
+    <author>wctang-data</author>
+    <image>
+      <url>{{ "/logo.jpg" | prepend: podcast.id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}</url>
+    </image>
+{% for item in podcast.items %}
+    <item>
+      <title>{{ item.title }}</title>
+      <pubDate>2024-03-22 04:00:00 GMT</pubDate>
+      <enclosure url="{{ item.file | prepend: "/" | prepend: podcast.id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}" type="audio/mpeg" />
+    </item>
+{% endfor %}
+  </channel>
+</rss>
+{% endif %}{% endfor %}
