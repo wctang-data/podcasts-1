@@ -1,64 +1,67 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<rss version="2.0" xmlns:podcast="https://podcastindex.org/namespace/1.0">
   <channel>
-    <title>晚安．月亮 - 木偶奇遇記</title>
-    <author>wctang-data</author>
-    <description>晚安．月亮 - 木偶奇遇記</description>
-    <language>zh-tw</language>
+    <title>木偶奇遇記</title>
+    <description>晚安．月亮─床邊故事：木偶奇遇記</description>
     <link>https://wctang-data.github.io/podcasts-1/goodnightmoon-pinocchio/feed.xml</link>
+    <language>zh-TW</language>
+    <author>wctang-data</author>
+    <image>
+      <url>https://wctang-data.github.io/podcasts-1/goodnightmoon-pinocchio/logo.jpg</url>
+    </image>
     <item>
-      <title>00 晚安．月亮 - 木偶奇遇記</title>
-      <pubDate>2024-03-22 00:00:00 GMT</pubDate>
+      <title>[00] 木偶奇遇記</title>
+      <pubDate>2024-03-22T10:00:00.000Z</pubDate>
       <enclosure url="https://wctang-data.github.io/podcasts-1/goodnightmoon-pinocchio/00.mp3" type="audio/mpeg"/>
     </item>
     <item>
-      <title>01 皮諾丘誕生了！</title>
-      <pubDate>2024-03-22 00:00:00 GMT</pubDate>
+      <title>[01] 皮諾丘誕生了！</title>
+      <pubDate>2024-03-22T10:00:00.000Z</pubDate>
       <enclosure url="https://wctang-data.github.io/podcasts-1/goodnightmoon-pinocchio/01.mp3" type="audio/mpeg" />
     </item>
     <item>
-      <title>02 皮諾丘上學去</title>
-      <pubDate>2024-03-22 00:00:00 GMT</pubDate>
+      <title>[02] 皮諾丘上學去</title>
+      <pubDate>2024-03-22T10:00:00.000Z</pubDate>
       <enclosure url="https://wctang-data.github.io/podcasts-1/goodnightmoon-pinocchio/02.mp3" type="audio/mpeg" />
     </item>
     <item>
-      <title>03 狐狸和貓</title>
-      <pubDate>2024-03-22 00:00:00 GMT</pubDate>
+      <title>[03] 狐狸和貓</title>
+      <pubDate>2024-03-22T10:00:00.000Z</pubDate>
       <enclosure url="https://wctang-data.github.io/podcasts-1/goodnightmoon-pinocchio/03.mp3" type="audio/mpeg" />
     </item>
     <item>
-      <title>04 藍髮仙女</title>
-      <pubDate>2024-03-22 00:00:00 GMT</pubDate>
+      <title>[04] 藍髮仙女</title>
+      <pubDate>2024-03-22T10:00:00.000Z</pubDate>
       <enclosure url="https://wctang-data.github.io/podcasts-1/goodnightmoon-pinocchio/04.mp3" type="audio/mpeg" />
     </item>
     <item>
-      <title>05 解救傑佩托</title>
-      <pubDate>2024-03-22 00:00:00 GMT</pubDate>
+      <title>[05] 解救傑佩托</title>
+      <pubDate>2024-03-22T10:00:00.000Z</pubDate>
       <enclosure url="https://wctang-data.github.io/podcasts-1/goodnightmoon-pinocchio/05.mp3" type="audio/mpeg" />
     </item>
     <item>
-      <title>06 再度相遇藍髮仙女</title>
-      <pubDate>2024-03-22 00:00:00 GMT</pubDate>
+      <title>[06] 再度相遇藍髮仙女</title>
+      <pubDate>2024-03-22T10:00:00.000Z</pubDate>
       <enclosure url="https://wctang-data.github.io/podcasts-1/goodnightmoon-pinocchio/06.mp3" type="audio/mpeg" />
     </item>
     <item>
-      <title>07 玩樂國</title>
-      <pubDate>2024-03-22 00:00:00 GMT</pubDate>
+      <title>[07] 玩樂國</title>
+      <pubDate>2024-03-22T10:00:00.000Z</pubDate>
       <enclosure url="https://wctang-data.github.io/podcasts-1/goodnightmoon-pinocchio/07.mp3" type="audio/mpeg" />
     </item>
     <item>
-      <title>08 變成驢子</title>
-      <pubDate>2024-03-22 00:00:00 GMT</pubDate>
+      <title>[08] 變成驢子</title>
+      <pubDate>2024-03-22T10:00:00.000Z</pubDate>
       <enclosure url="https://wctang-data.github.io/podcasts-1/goodnightmoon-pinocchio/08.mp3" type="audio/mpeg" />
     </item>
     <item>
-      <title>09 在鯊魚肚子裡</title>
-      <pubDate>2024-03-22 00:00:00 GMT</pubDate>
+      <title>[09] 在鯊魚肚子裡</title>
+      <pubDate>2024-03-22T10:00:00.000Z</pubDate>
       <enclosure url="https://wctang-data.github.io/podcasts-1/goodnightmoon-pinocchio/09.mp3" type="audio/mpeg" />
     </item>
     <item>
-      <title>10 完結篇：真正的小男孩</title>
-      <pubDate>2024-03-22 00:00:00 GMT</pubDate>
+      <title>[10] 完結篇：真正的小男孩</title>
+      <pubDate>2024-03-22T10:00:00.000Z</pubDate>
       <enclosure url="https://wctang-data.github.io/podcasts-1/goodnightmoon-pinocchio/10.mp3" type="audio/mpeg" />
     </item>
   </channel>
