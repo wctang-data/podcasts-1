@@ -1,4 +1,4 @@
-{% for podcast in site.data.podcasts %}{% if podcast.id == page.podcast-id %}
+{% assign podcast = site.data.podcasts[page.podcast-id] %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,7 +7,13 @@
   <body>
     <h1>{{ podcast.title }}</h1>
     <p>{{ podcast.description }}</p>
-    <a href="/{{ podcast.id }}/feed.xml">feed</a>
+    <a href="{{ "/feed.xml" | prepend: page.podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}">feed</a>
+    <ul>
+{% for item in podcast.items %}
+    <li>
+      <a href="{{ item.file | prepend: "/" | prepend: page.podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}">{{ item.title }}</a>
+    </li>
+{% endfor %}
+    </ul>
   </body>
 </html>
-{% endif %}{% endfor %}

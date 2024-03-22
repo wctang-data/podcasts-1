@@ -1,4 +1,4 @@
-{% for podcast in site.data.podcasts %}{% if podcast.id == page.podcast-id %}<?xml version="1.0" encoding="UTF-8" ?>
+{% assign podcast = site.data.podcasts[page.podcast-id] %}
 <rss version="2.0">
   <channel>
     <title>{{ podcast.title }}</title>
@@ -13,9 +13,8 @@
     <item>
       <title>{{ item.title }}</title>
       <pubDate>2024-03-22 04:00:00 GMT</pubDate>
-      <enclosure url="{{ item.file | prepend: "/" | prepend: podcast.id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}" type="audio/mpeg" />
+      <enclosure url="{{ item.file | prepend: "/" | prepend: page.podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}" type="audio/mpeg" />
     </item>
 {% endfor %}
   </channel>
 </rss>
-{% endif %}{% endfor %}
