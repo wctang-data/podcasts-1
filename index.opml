@@ -1,0 +1,17 @@
+---
+---
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<opml version="1.0">
+<head>
+  <title>Podcasts</title>
+</head>
+<body>
+<outline text="feeds">
+{% for podcast_v in site.data.podcasts %}
+{% assign podcast_id = podcast_v[0] %}
+{% assign podcast = podcast_v[1] %}
+  <outline xmlUrl="{{ "/feed.xml" | prepend: podcast_id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}" type="rss" text="{{ podcast.title }}" />
+{% endfor %}
+</outline>
+</body>
+</opml>

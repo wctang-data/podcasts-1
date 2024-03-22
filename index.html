@@ -8,12 +8,13 @@
   </head>
   <body>
     <h1>{{ site.title }}</h1>
+    <a href="{{ "/index.opml" | prepend: site.baseurl | prepend: site.url }}">opml</a>
     <ul>
 {% for podcast_v in site.data.podcasts %}
 {% assign podcast_id = podcast_v[0] %}
 {% assign podcast = podcast_v[1] %}
       <li>
-        <a href="{{ podcast_id }}/">{{ podcast.title }}</a>
+        <a href="{{ "/" | prepend: podcast_id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}">{{ podcast.title }}</a>
       </li>
 {% endfor %}
     </ul>
