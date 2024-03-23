@@ -11,10 +11,12 @@
     <a href="{{ "/feed.xml" | prepend: page.podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}">feed</a>
     <ul>
 {% for item in podcast.items %}
+{% assign fn = item.title | slice: 0, 2 | prepend: "/" | append: ".mp3" %}
     <li>
-      <a href="{{ item.file | prepend: "/" | prepend: page.podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}">{{ item.title }}</a>
+      <a href="{{ fn | prepend: page.podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}">{{ item.title }}</a>
     </li>
 {% endfor %}
     </ul>
   </body>
+  <p>{{ site.time | date_to_rfc822 }}</p>
 </html>

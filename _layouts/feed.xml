@@ -1,19 +1,19 @@
-{% assign podcast = site.data.podcasts[page.podcast-id] %}
+{% assign podcast = site.data.podcasts[page.podcast-id] %}<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
     <title>{{ podcast.title }}</title>
     <description>{{ podcast.description }}</description>
+    <itunes:image href="{{ "/logo.jpg" | prepend: page.podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}" />
     <link>{{ "/" | prepend: page.podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}</link>
     <language>{{ site.lang }}</language>
+    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <author>wctang-data</author>
-    <image>
-      <url>{{ "/logo.jpg" | prepend: page.podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}</url>
-    </image>
 {% for item in podcast.items %}
+{% assign fn = item.title | slice: 0, 2 | prepend: "/" | append: ".mp3" %}
     <item>
       <title>{{ item.title }}</title>
-      <pubDate>2024-03-22 04:00:00 GMT</pubDate>
-      <enclosure url="{{ item.file | prepend: "/" | prepend: page.podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}" type="audio/mpeg" />
+      <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
+      <enclosure url="{{ fn | prepend: page.podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}" type="audio/mpeg" />
     </item>
 {% endfor %}
   </channel>
