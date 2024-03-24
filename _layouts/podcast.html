@@ -5,6 +5,7 @@
     <title>{{ podcast.title }}</title>
   </head>
   <body>
+    {{ page.url | replace: "/", "" }}
     <h1>{{ podcast.title }}</h1>
     <img src="{{ "/logo.jpg" | prepend: page.podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}" />
     <p>{{ podcast.description }}</p>

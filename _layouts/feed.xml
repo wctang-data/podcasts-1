@@ -3,18 +3,20 @@
   <channel>
     <title>{{ podcast.title }}</title>
     <description>{{ podcast.description }}</description>
-    <itunes:image href="{{ "/logo.jpg" | prepend: page.podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}" />
-    <link>{{ "/" | prepend: page.podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}</link>
+    <itunes:image href="{{ '/logo.jpg' | prepend: page.podcast-id | prepend: '/' | prepend: site.baseurl | prepend: site.url }}" />
+    <link>{{ '/' | prepend: page.podcast-id | prepend: '/' | prepend: site.baseurl | prepend: site.url }}</link>
     <language>{{ site.lang }}</language>
     <pubDate>{{ podcast.time }}</pubDate>
     <author>wctang-data</author>
 {% for item in podcast.items %}
-{% assign fn = item.title | slice: 0, 2 | prepend: "/" | append: ".mp3" %}
+{% assign fn = item.title | slice: 0, 2 | prepend: '/' | append: '.mp3' %}
     <item>
       <title>{{ item.title }}</title>
       <pubDate>{{ podcast.time }}</pubDate>
-      <enclosure url="{{ fn | prepend: page.podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}" type="audio/mpeg" />
+      <enclosure url="{{ fn | prepend: page.podcast-id | prepend: '/' | prepend: site.baseurl | prepend: site.url }}" type="audio/mpeg" length="{{ item.size }}" />
+      <itunes:duration>{{ item.duration }}</itunes:duration>
     </item>
 {% endfor %}
   </channel>
 </rss>
+ 
