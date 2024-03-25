@@ -11,12 +11,11 @@
 {% for item in podcast.items %}
 {% assign fn = item.title | slice: 0, 2 | prepend: '/' | append: '.mp3' %}
     <item>
-      <title>{{ item.title }}</title>
-      <pubDate>{{ podcast.time }}</pubDate>
+      <title>{{ item.title }} {{ forloop.index0 }} {{ dif }}</title>
+      <pubDate>{{ podcast.time | date: '%s' | plus: forloop.index | date_to_rfc822 }}</pubDate>
       <enclosure url="{{ fn | prepend: podcast-id | prepend: '/' | prepend: site.baseurl | prepend: site.url }}" type="audio/mpeg" length="{{ item.size }}" />
       <itunes:duration>{{ item.duration }}</itunes:duration>
     </item>
 {% endfor %}
   </channel>
 </rss>
- 
