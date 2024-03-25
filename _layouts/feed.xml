@@ -1,7 +1,7 @@
 {% assign podcast-id = page.url | replace: "/", ""  | replace: "feed.xml", "" %}{% assign podcast = site.data.podcasts[podcast-id] %}<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
-    <title>{{ podcast-id }}</title>
+    <title>{{ podcast.title }}</title>
     <description>{{ podcast.description }}</description>
     <itunes:image href="{{ '/logo.jpg' | prepend: podcast-id | prepend: '/' | prepend: site.baseurl | prepend: site.url }}" />
     <link>{{ '/' | prepend: podcast-id | prepend: '/' | prepend: site.baseurl | prepend: site.url }}</link>
