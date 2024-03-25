@@ -1,4 +1,4 @@
-{% assign podcast = site.data.podcasts[page.podcast-id] %}
+{% assign podcast-id = page.url | replace: "/", "" %}{% assign podcast = site.data.podcasts[podcast-id] %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,14 +7,14 @@
   <body>
     {{ page.url | replace: "/", "" }}
     <h1>{{ podcast.title }}</h1>
-    <img src="{{ "/logo.jpg" | prepend: page.podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}" />
+    <img src="{{ "/logo.jpg" | prepend: podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}" />
     <p>{{ podcast.description }}</p>
-    <a href="{{ "/feed.xml" | prepend: page.podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}">feed</a>
+    <a href="{{ "/feed.xml" | prepend: podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}">feed</a>
     <ul>
 {% for item in podcast.items %}
 {% assign fn = item.title | slice: 0, 2 | prepend: "/" | append: ".mp3" %}
     <li>
-      <a href="{{ fn | prepend: page.podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}">{{ item.title }}</a>
+      <a href="{{ fn | prepend: podcast-id | prepend: "/" | prepend: site.baseurl | prepend: site.url }}">{{ item.title }}</a>
     </li>
 {% endfor %}
     </ul>
