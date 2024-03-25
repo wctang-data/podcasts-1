@@ -9,6 +9,7 @@
   <body>
     <h1>{{ site.title }}</h1>
     <a href="{{ "/index.opml" | prepend: site.baseurl | prepend: site.url }}">opml</a>
+    <a href="https://github.com/wctang-data/podcasts-1">Github</a>
     <ul>
 {% for podcast_v in site.data.podcasts %}
 {% assign podcast_id = podcast_v[0] %}
